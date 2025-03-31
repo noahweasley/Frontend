@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async defer></script>
+
+    <title>S.M.D - Spotify Music Downloader</title>
+  </head>
+  <body>
+    <nav>
+      <div class="icon-container">
+        <img src="./image/app_icon.png" />
+        <p>S.M.D</p>
+      </div>
+
+      <div class="links" id="links">
+        <a class="active" href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
+
+      <div class="menu" onclick="toggleNav()" id="menu">
+        <a>
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <section class="download-section">
+        <div>
+          <h1>S.M.D</h1>
+          <h3>Spotify Music Downloader</h3>
+        </div>
+        <h5>Discover Unlimited Songs Now</h5>
+        <div>
+          <div class="buttons">
+            <div class="button">iOS Coming</div>
+            <div class="button">Android Coming</div>
+          </div>
+          <div class="button button--download">Download For Desktop</div>
+        </div>
+      </section>
+      <section class="feature-section">
+        <h1>Top Features</h1>
+
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="icon-x2 fa fa-music"></i>
+            </div>
+            <p>Search for your favorite songs easily. No ads, No stories</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="icon-x2 fa fa-headphones"></i>
+            </div>
+            <p>
+              Listen to ad-free music just the way you like it, inside your
+              favorite music app
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon-box">
+              <i class="icon-x2 fa fa-play"></i>
+            </div>
+            <p>
+              Extend Spotify's features, providing you with what you love the
+              most
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mission-section"></section>
+      <section class="contact-section"></section>
+    </main>
+    <script>
+      const links = document.getElementById("links");
+      let isLinkVisible = false;
+
+      function toggleNav() {
+        if (isLinkVisible) {
+          links.style.display = "flex";
+        } else {
+          links.style.display = "none";
+        }
+
+        isLinkVisible = !isLinkVisible;
+      }
+    </script>
+  </body>
+</html>

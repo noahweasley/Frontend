@@ -1,0 +1,58 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+}
+
+* {
+  font-size: 1.2em;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#form {
+  width: 600px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+p {
+  color: red;
+  font-size: 1em;
+}
+
+.gone {
+  display: none;
+}
+

@@ -1,0 +1,5 @@
+{
+  "editor.fontSize": 14,
+  // "liveServer.settings.CustomBrowser": "chrome"
+  "liveServer.settings.port": 1111
+}

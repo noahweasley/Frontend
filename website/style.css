@@ -1,0 +1,182 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18;
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+nav {
+  border-bottom: 1px solid #272727;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.links {
+  margin: 8px;
+  display: flex;
+  gap: 1em;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-inline: 8px;
+  font-size: 1.2em;
+}
+
+.menu {
+  display: none;
+  border: 1px solid green;
+  padding: 1em;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .links {
+    flex-direction: column;
+    display: none;
+  }
+
+  .menu {
+    display: initial;
+  }
+
+  .icon-box p {
+    display: none;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+section {
+  width: 100%;
+  /* height: 300px; */
+  border-bottom: 1px solid #272727;
+}
+
+.download-section,
+.mission-section {
+  background-color: #0d0b0a;
+}
+
+.contact-section,
+.feature-section {
+  background-color: #000000;
+}
+
+.download-section {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.download-section > div {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1em;
+}
+
+.button {
+  border: 1px solid rgb(10, 197, 10);
+  padding: 0.8em 1em;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.button--download:hover {
+  background-color: rgb(10, 197, 10);
+}
+
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 2em; */
+  gap: 1em;
+}
+
+.feature-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  margin: 4em 0px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;
+  cursor: pointer;
+}
+
+.feature-card p {
+  text-align: center;
+}
+
+.icon-box {
+  background-color: #123495;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 8px 4px #3030d68c;
+  transition: 1s;
+}
+
+.icon-box:hover {
+  transform: translateY(-20px);
+}
+
+.icon-x2 {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 560px) {
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+}

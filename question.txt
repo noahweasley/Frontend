@@ -1,0 +1,4 @@
+- Create an Object
+- Convert it to a string
+- Create an HTML element
+- Change the content of the HTML element to the converted string
